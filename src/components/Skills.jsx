@@ -8,7 +8,9 @@ import { Icon as IconIfy } from '@iconify/react/dist/iconify.js';
 
 const SkillCard = ({ icon: Icon, title, color, skills }) => {
     return (
-        <div className="border-2 border-blue-800/ bg-blue-800/  p-4 rounded-2xl bg-gray-800/50 border-cyan-500/20 hover:bg-gray-800/80 transition-all duration-300">
+        <div className="border-2 border-blue-800/ bg-blue-800/  p-4 sm:p-5 md:p-6 rounded-2xl bg-gray-800/50 border-cyan-500/10 hover:bg-gray-800/80 transition-all duration-300" style={{
+            boxShadow: 'inset 2px 2px 4px #50505050,inset -2px -2px 4px #00ffff30'
+        }}>
             <div className="flex items-center gap-2">
                 <Icon className={`w-8 h-8 ${color}`} />
                 <h4 className="text-white font-semibold text-xl">
@@ -19,7 +21,9 @@ const SkillCard = ({ icon: Icon, title, color, skills }) => {
                 {/* <Icon icon="skill-icons:vite-light" width="256" height="256" /> */}
                 {
                     skills?.map((skill, index) =>
-                        <IconIfy key={index} icon={`${skill}`} className='w-20 h-20 bg-gray-700/50 hover:bg-gray-700 text-gray-100 border border-gray-600/60 p-2.5 rounded-lg' />
+                        <IconIfy key={index} icon={`${skill}`} style={{
+                            boxShadow: 'inset 4px 4px 6px #00000050,inset -4px -4px 6px #ffffff30'
+                        }} className='w-20 h-20 bg-gray-700/50 hover:scale-105 hover:bg-gray-700 text-gray-100 border border-gray-600/60 p-2.5 rounded-lg' />
                     )
                 }
                 {/* <img key={``} src={``} alt="" className="max-h-16 bg-gray-700/50 hover:bg-gray-700 text-gray-100 border-gray-600" /> */}
