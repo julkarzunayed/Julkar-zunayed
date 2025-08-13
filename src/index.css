@@ -30,6 +30,10 @@
   filter: drop-shadow(0 0 10px #00d5ffaa);
 }
 
+.active{
+  background-color: rgba(255, 255, 255, 0.161);
+}
+
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;

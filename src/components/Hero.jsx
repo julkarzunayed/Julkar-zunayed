@@ -43,7 +43,7 @@ const socialLinks = [
 
 const Hero = () => {
     return (
-        <section className=' min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8'>
+        <section className=' min-h-screen flex items-center justify-center px-4 '>
 
             <div className="container mx-auto flex gap-10 flex-col-reverse lg:flex-row py-20 *: *:flex-1/2">
                 <div className="flex flex-col items-center lg:items-start">

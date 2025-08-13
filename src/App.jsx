@@ -9,27 +9,29 @@ import Hero from './components/Hero'
 import NavBar from './components/NavBar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import { Element } from 'react-scroll'
 
 function App() {
 
 
   return (
-    <div className="pt-14 bg-[#0f1629]">
+    <div className="pt-14 bg-[#0f1629] px-4 sm:px-6 lg:px-8">
       <NavBar />
 
       {/* <Router>
         <Route path='/' element={<Hero />} />
         <Route path='/skills' element={<Skills />} />
       </Router> */}
-      <section id="hero">
+
+      <Element id='hero' name="hero">
         <Hero />
         <About />
-      </section>
+      </Element>
 
-      <section id="skills"><Skills /></section>
-      <section id="education"><Education /></section>
-      <section id="projects"><Projects /></section>
-      <section id="contact"><Contact /></section>
+      <Element id='skills' name="skills"><Skills /></Element>
+      <Element id='education' name="education"><Education /></Element>
+      <Element id='projects' name="projects"><Projects /></Element>
+      <Element id='contact' name="contact"><Contact /></Element>
 
       {/* <Hero />
       <About />
