@@ -21,7 +21,8 @@ const SkillCard = ({ icon: Icon, title, color, skills }) => {
                 {/* <Icon icon="skill-icons:vite-light" width="256" height="256" /> */}
                 {
                     skills?.map((skill, index) =>
-                        <IconIfy key={index} icon={`${skill}`} style={{
+                        <IconIfy key={index} icon={skill?.icon} style={{
+                            ...skill?.style,
                             boxShadow: 'inset 4px 4px 6px #00000050,inset -4px -4px 6px #ffffff30'
                         }} className='w-20 h-20 bg-gray-700/50 hover:scale-105 hover:bg-gray-700 text-gray-100 border border-gray-600/60 p-2.5 rounded-lg' />
                     )
@@ -42,14 +43,14 @@ const Skills = () => {
             title: 'Frontend Development',
             color: 'text-blue-400',
             skills: [
-                'logos:react',
-                'logos:vitejs',
-                'logos:react-router',
-                'logos:daisyui-icon',
-                'logos:tailwindcss-icon',
-                'logos:javascript',
-                'logos:css-3',
-                'logos:html-5',
+                { icon: "logos:react" },
+                { icon: "logos:vitejs" },
+                { icon: "logos:react-router" },
+                { icon: "logos:daisyui-icon" },
+                { icon: "logos:tailwindcss-icon" },
+                { icon: "logos:javascript" },
+                { icon: "logos:css-3" },
+                { icon: "logos:html-5" },
             ]
         },
         {
@@ -57,10 +58,12 @@ const Skills = () => {
             title: 'Backend Development',
             color: 'text-green-400',
             skills: [
-                'logos:nodejs-icon',
-                'skill-icons:expressjs-dark',
-                'logos:mongodb-icon',
-                'logos:firebase-icon',
+                { icon: "logos:nodejs-icon" },
+                { icon: "simple-icons:express", style: { color: "#fff" } },
+                { icon: "logos:javascript" },
+                { icon: "logos:mongodb-icon" },
+                { icon: "logos:jwt-icon" },
+                { icon: "logos:firebase-icon" },
             ]
         },
         {
@@ -68,8 +71,8 @@ const Skills = () => {
             title: 'UI/UX',
             color: 'text-purple-400',
             skills: [
-                'logos:figma',
-                'logos:adobe-photoshop',
+                { icon: "logos:figma" },
+                { icon: "logos:adobe-photoshop" },
             ]
         },
         {
@@ -77,11 +80,11 @@ const Skills = () => {
             title: 'Claud & DevOps',
             color: 'text-orange-400',
             skills: [
-                'logos:firebase-icon',
-                'skill-icons:vercel-dark',
-                'logos:netlify-icon',
-                'logos:git-icon',
-                'logos:github-icon',
+                { icon: "logos:firebase-icon" },
+                { icon: "skill-icons:vercel-dark" },
+                { icon: "logos:netlify-icon" },
+                { icon: "logos:git-icon" },
+                { icon: "logos:github-icon" },
             ]
         },
         {
@@ -89,9 +92,9 @@ const Skills = () => {
             title: 'Tools & Technologies',
             color: 'text-pink-400',
             skills: [
-                'logos:visual-studio-code',
-                'logos:npm-icon',
-                'logos:chrome'
+                { icon: "logos:visual-studio-code" },
+                { icon: "logos:npm-icon" },
+                { icon: "logos:chrome" },
             ]
         },
         {
@@ -99,9 +102,11 @@ const Skills = () => {
             title: 'Technical Skills',
             color: 'text-blue-400',
             skills: [
-                'streamline-cyber-color:programming-bug-2',
-                'streamline-pixel:coding-apps-websites-programming-bug',
-                'line-md:cog-loop'
+                { icon: "streamline-cyber-color:programming-bug-2" },
+                { icon: "streamline-pixel:coding-apps-websites-programming-bug" },
+                { icon: "line-md:cog-loop" },
+                { icon: "flat-color-icons:electronics" },
+                { icon: "file-icons:electron", style: { color: "#00d8ff" } },
             ]
         },
     ]
