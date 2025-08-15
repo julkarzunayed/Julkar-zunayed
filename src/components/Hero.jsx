@@ -62,6 +62,7 @@ const Hero = () => {
                         </span>
 
                     </h1>
+                    {/* ----Type writer----------- */}
                     <div className="border  text-xl border-[#60a5fa50] rounded-xl  font-bold py-2 px-6 min-w-sm lg:min-w-2xs bg-blue-500/10 my-7">
                         <Typewriter
                             words={words}
@@ -70,7 +71,7 @@ const Hero = () => {
                             cursorBlinking={false}
                         />
                     </div>
-                    {/* Social Links */}
+                    {/*--------------- Social Links ----------- */}
                     <div className="relative mb-8 sm:mb-12 max-w-xl flex gap-5">
                         {
                             socialLinks?.map((link, index) =>
