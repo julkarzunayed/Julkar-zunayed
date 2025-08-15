@@ -6,6 +6,7 @@ import LinkedIn from "../assets/social-icons/linkedin.png";
 import Facebook from "../assets/social-icons/facebook.png";
 import WhatsApp from "../assets/social-icons/whatsapp.png";
 import { Icon } from '@iconify/react/dist/iconify.js';
+import Swal from 'sweetalert2';
 
 const socialLinks = [
     {
@@ -67,17 +68,36 @@ const Contact = () => {
             message
         };
 
-        console.log(data);
+        Swal.fire({
+            icon: 'info',
+            title: "Your Message has been sent!",
+            background: '#303030',
+            color: '#ffffff'
+            // showClass: {
+            //     popup: `
+            //         animate__animated
+            //         animate__fadeInUp
+            //         animate__faster
+            //         `
+            // },
+            // hideClass: {
+            //     popup: `
+            //         animate__animated
+            //         animate__fadeOutDown
+            //         animate__faster
+            //         `
+            // }
+        });
 
     };
-    
+
     return (
-        <div className='min-h-screen flex items-center justify-center p-16'>
+        <div className='min-h-screen flex items-center justify-center py-16'>
             <div className="container flex flex-col gap-10 lg:flex-row *: *:flex-1">
                 {/* Contact Content---------------- */}
                 <div className="">
                     <div className="">
-                        <h3 className="text-3xl font-bold">
+                        <h3 className="text-3xl font-bold text-blue-500">
                             Get in Touch
                         </h3>
                         <p className="text-slate-200 my-3 mb-8">Wanna work together or Have a question ? Drop a message!</p>
@@ -119,7 +139,7 @@ const Contact = () => {
                 </div>
 
                 {/* Send message Form */}
-                <div className="p-8 bg-white/5 rounded-xl">
+                <div className="p-8 bg-white/5 rounded-xl max-w-2xl mx-auto w-full">
                     <form onSubmit={handleFormSubmit} className="flex flex-col gap-5 *:w-full *:px-4 *:py-3 *:rounded-lg *:bg-white/5 *:border *:border-gray-700 *:focus:border-blue-500 *:focus:outline-none *:transition-colors">
                         <input required type="text" name='name' placeholder="Your Name" className="" />
                         <input required type="text" name='email' placeholder="Your Email" className="" />
