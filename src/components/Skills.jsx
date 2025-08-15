@@ -1,4 +1,4 @@
-
+{/* <Icon icon="skill-icons:github-dark" /> */}
 import React from 'react';
 // const frontend = import.meta.glob("../assets/skills-logo/frontend/*.png", { eager: true })
 // const frontendLogos = Object.values(frontend).map(img => img.default);
@@ -7,6 +7,7 @@ import { Code2, Wrench, Database, Layout, Cpu, Cloud, Icon } from "lucide-react"
 import { Icon as IconIfy } from '@iconify/react/dist/iconify.js';
 
 const SkillCard = ({ icon: Icon, title, color, skills }) => {
+    Icon
     return (
         <div className="border-2 border-blue-800/ bg-blue-800/  p-4 sm:p-5 md:p-6 rounded-2xl bg-gray-800/50 border-cyan-500/10 hover:bg-gray-800/80 transition-all duration-300" style={{
             boxShadow: 'inset 2px 2px 4px #50505050,inset -2px -2px 4px #00ffff30'
@@ -61,7 +62,7 @@ const Skills = () => {
                 { icon: "logos:nodejs-icon" },
                 { icon: "simple-icons:express", style: { color: "#fff" } },
                 { icon: "logos:javascript" },
-                { icon: "logos:mongodb-icon" },
+                { icon: "devicon:mongodb" },
                 { icon: "logos:jwt-icon" },
                 { icon: "logos:firebase-icon" },
             ]
