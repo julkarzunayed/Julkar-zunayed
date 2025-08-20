@@ -92,8 +92,12 @@ const Hero = () => {
                         <button className="btn-glowing flex gap-2 items-center active:scale-y-105 after:bg-[#333333]">
                             More Ifo <GoLinkExternal />
                         </button>
+                        {/* Download Resume 
+                                https://drive.google.com/uc?export=download&id=[FILE_ID]
+                                https://drive.google.com/file/d/1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6/view?usp=drive_link                        
+                        */}
                         <a
-                            href="/resume-demo.pdf"
+                            href="https://drive.google.com/uc?export=download&id=1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6" //https://drive.google.com/uc?export=download&id=[FILE_ID]
                             download={"Resume of Julkarnain Zunayed"}
                             >
                             <button className="btn-glowing flex gap-2 items-center after:bg-[#ffffff50]">
