@@ -73,20 +73,7 @@ const Contact = () => {
             title: "Your Message has been sent!",
             background: '#303030',
             color: '#ffffff'
-            // showClass: {
-            //     popup: `
-            //         animate__animated
-            //         animate__fadeInUp
-            //         animate__faster
-            //         `
-            // },
-            // hideClass: {
-            //     popup: `
-            //         animate__animated
-            //         animate__fadeOutDown
-            //         animate__faster
-            //         `
-            // }
+            
         });
 
     };

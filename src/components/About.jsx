@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from "../assets/profile/profile_by_canva.png"
+// import profileImage from "../assets/profile/profile_by_canva.png"
 
 const About = () => {
     return (

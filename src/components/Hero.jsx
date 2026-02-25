@@ -96,8 +96,12 @@ const Hero = () => {
                                 https://drive.google.com/uc?export=download&id=[FILE_ID]
                                 https://drive.google.com/file/d/1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6/view?usp=drive_link                        
                         */}
+                        {/* Resume Download Button */}
                         <a
-                            href="https://drive.google.com/uc?export=download&id=1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6" //https://drive.google.com/uc?export=download&id=[FILE_ID]
+                            href="https://drive.google.com/uc?export=download&id=1wlngjuIWqT6h6by7uZ764z4u2_JjILWS" 
+                            //https://drive.google.com/uc?export=download&id=[FILE_ID]
+                            // 1wlngjuIWqT6h6by7uZ764z4u2_JjILWS
+                            // 1WOnEAjhtnkZFfLJxDvxKxFzTyi_CXWw6
                             download={"Resume of Julkarnain Zunayed"}
                             >
                             <button className="btn-glowing flex gap-2 items-center after:bg-[#ffffff50]">
